@@ -1,0 +1,13 @@
+[
+  {
+    "firma": "Opel",
+    "combustibil": "benzina",
+    "pret": 39000.0,
+    "model": "Astra"
+  },
+  {
+    "firma": "Ducatti",
+    "combustibil": "motorina",
+    "dataFabricatiei": "2002-11-23"
+  }
+]

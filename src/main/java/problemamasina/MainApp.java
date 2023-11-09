@@ -10,31 +10,6 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class MainApp {
-    public static void scriere(List<Autoturism> lista) {
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.registerModule(new JavaTimeModule());
-            mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-            File file = new File("C:\\lucru_java\\problema_masina\\src\\main\\resources\\masini.json");
-            mapper.writeValue(file, lista);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static List<Autoturism> citire() {
-        try {
-            File file = new File("C:\\lucru_java\\problema_masina\\src\\main\\resources\\masini.json");
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.registerModule(new JavaTimeModule());
-            mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-            List<Autoturism> autoturisme = mapper.readValue(file, new TypeReference<List<Autoturism>>() {});
-            return autoturisme;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return new ArrayList<>();
-    }
 
     public static void main(String[] args) {
 

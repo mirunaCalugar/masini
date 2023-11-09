@@ -117,7 +117,7 @@ public class MainApp {
 
                     System.out.println("Combustibil:");
                    String combustibilCitit=scanner.next().toLowerCase();
-                   autoturisme.stream().filter(autoturism -> (autoturism.getCombustibil().equals(combustibilCitit))).forEach(System.out::println);
+                   autoturisme.stream().filter(autoturism -> (autoturism.getCombustibil().name().equalsIgnoreCase(combustibilCitit))).forEach(System.out::println);
 
                     break;
                 case 4:
